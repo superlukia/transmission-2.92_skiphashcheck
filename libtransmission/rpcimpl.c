@@ -386,6 +386,7 @@ torrentReannounce (tr_session               * session,
 
   assert (idle_data == NULL);
 
+  skiphash();
   torrents = getTorrents (session, args_in, &torrentCount);
   for (i=0; i<torrentCount; ++i)
     {
